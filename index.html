@@ -1,205 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>ChatBot UI</title>
-	 <meta charset="utf-8">
+   <head>
+      <title>ChatBot UI</title>
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" >
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script src="https://kit.fontawesome.com/8e28c47455.js" crossorigin="anonymous"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-
-<style>
-	
-	*{
-		margin: 0;
-		padding: 0;
-		font-family: 'DM Sans', sans-serif;
-
-	}
-
-	
-
-
-	.homeScreen{
-
-		background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
-		/*linear-gradient(to bottom,  #9c9e9f 50%,#9c9e9f 70%,#f6f6f6 70%,#f6f6f6 100%);*/
-		padding-left: 56px;
-
-		border-radius: 15px 15px 0px 0px;
-		height: 295px;
-		
-		
-		
-	}
-	.iris{
-		font-weight: bold;
-		font-size: 30px;
-		line-height: 36px;
-		padding-top: 19px;
-
-	}
-	.hello{
-		font-weight: bold;
-		font-size: 22px;
-		line-height: 27px;
-
-	}
-	.virtual{
-		line-height: 23px;
-		font-weight: 500;
-		font-size: 18px;
-	}
-	@media only screen and (max-width: 600px){
-		.query{
-			margin-top:2%;
-
-			width: 98%;
-		}
-
-	}
-	@media only screen and (min-width: 601px){
-		.query{
-			margin-top:2%;
-			width: 87%;
-		}
-
-	}
-
-
-</style>
-
-</head>
-<body style="background: #E5E5E5;"><!--background: #E5E5E5!-->
-	<div > 
-<div class="container mb-3">
-	<div style="" class="ml-auto mr-auto query">
-	<div class="row">
-		
-		<div class="offset-sm-2 col-sm-8 offset-lg-3 col-lg-5 text-white homeScreen">
-			<p class="iris">IRIS</p>
-			<p class="hello">Hello  &nbsp;&nbsp;👋🏻</p>
-			<div class="virtual pb-5">
-			<p>I am Iris, a Virtual Assistant<br>How may I help you?</p>
-			</div>
-			
-
-		</div>
-		
-
-		
-	</div>
-
-	<div class="row">
-			<div class="offset-sm-2 col-sm-8 offset-lg-3 col-lg-5" style="height: 340px;background: white;border-radius:  0 0 15px 15px">
-				
-
-					<!-- CARD START !-->
-			<div class="card" style="color: black; margin-top:-83px;">
-  			<div class="card-body">
-
-  				<div style="width: 67px;height: 67px;background: linear-gradient(180deg, #FF7600 0%, #FF5C00 100%);box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); border-radius: 50%; display: flex;justify-content: center;align-items: center;margin-top: -58px;">
-  					<i class="fas fa-robot text-white" style="font-size: 30px;"></i>
-  				</div>
-
-    			<p style="font-size: 14px;font-weight: 500;padding-top: 15px;display: inline-block;">Frequently Asked Questions</p>
-    			
-    			
-    				<div style="width: 21px;height: 21px;display: inline-block;background: rgba(247, 183, 49, 0.12);border-radius: 50%;position: relative;" >
-    					<div style="margin: 0;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
-    					<i class="fas fa-question" style="color: #FF7600;font-size: 14px;"></i>
-
-    					</div>
-    				</div>
-    			
-    			
-
-    			<!--form div!-->
-
-    			<div style="height: 50px;background: #FFFFFF;border: 1px solid #E1E1E1;box-sizing: border-box;box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);border-radius: 8px;display: flex;align-items: center;">
-    				
-    			<div style="width: 14px;height: 14px;background: rgba(255, 118, 0, 0.15); border-radius: 50%;display: flex;justify-content: center;align-items: center" class="ml-2">
-    				<div style="width: 8px;height: 8px;background: rgba(255, 118, 0, 0.8);border-radius: 50%;">
-    				
-    				</div>
-    			</div>
-    			<span style="">	
-    			<div style="font-weight: normal;font-size: 12px;color: #2D2D2D;position: relative;left: 8px;margin-right:10px;">  Can I redeem my FB before the original term?</div></span>
-				</div>
-    			<!--form div end!-->
-
-    			<div style="height: 50px;background: #FFFFFF;border: 1px solid #E1E1E1;box-sizing: border-box;box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);border-radius: 8px;display: flex;align-items: center;" class="mt-2">
-    				
-    			<div style="width: 14px;height: 14px;background: rgba(255, 118, 0, 0.15); border-radius: 50%;display: flex;justify-content: center;align-items: center" class="ml-2">
-    				<div style="width: 8px;height: 8px;background: rgba(255, 118, 0, 0.8);border-radius: 50%;">
-    				
-    				</div>
-    			</div>
-    			<span>	
-    			<div style="font-weight: normal;font-size: 12px;color: #2D2D2D;position: relative;left: 8px;margin-right:10px;">  How do I pay my Credit card bill?</div></span>
-				</div>
-
-
-
-
-				<div style="height: 50px;background: #FFFFFF;border: 1px solid #E1E1E1;box-sizing: border-box;box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);border-radius: 8px;display: flex;align-items: center;" class="mt-2">
-    				
-    			<div style="width: 14px;height: 14px;background: rgba(255, 118, 0, 0.15); border-radius: 50%;display: flex;justify-content: center;align-items: center" class="ml-2">
-    				<div style="width: 8px;height: 8px;background: rgba(255, 118, 0, 0.8);border-radius: 50%;">
-    				
-    				</div>
-    			</div>
-    			<span>	
-    			<div style="font-weight: normal;font-size: 12px;color: #2D2D2D;position: relative;left: 8px;margin-right:10px;">  How can I get my Account Statement?</div></span>
-				</div>
-
-
-
-					<div style="height: 50px;background: #FFFFFF;border: 1px solid #E1E1E1;box-sizing: border-box;box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);border-radius: 8px;display: flex;align-items: center;" class="mt-2">
-    				
-    			<div style="width: 14px;height: 14px;background: rgba(255, 118, 0, 0.15); border-radius: 50%;display: flex;justify-content: center;align-items: center" class="ml-2">
-    				<div style="width: 8px;height: 8px;background: rgba(255, 118, 0, 0.8);border-radius: 50%;">
-    				
-    				</div>
-    			</div>
-    			<span>	
-    			<div style="font-weight: normal;font-size: 12px;color: #2D2D2D;position: relative;left: 8px;margin-right:10px;">  What is the tencure of Fixed Deposit?</div></span>
-				</div>
-
-
-
-
-					<!-- button !-->
-					<div class="mt-4 text-center">
-					<button style="width: 268px;height: 44px;background: #FFFFFF;border: 1px solid #D1D1D1;box-sizing: border-box;
-					box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);border-radius: 100px;font-weight: 500;font-size: 14px;line-height: 18px;color: #2D2D2D;" class="btn btn-lg">
-						<i class="far fa-comment-alt" style="font-size: 12px;"></i> Start a New Conversation
-					</button>
-					</div>
-				<!--button end !-->
-
-
-
-  			</div>
-			</div>
-
-			<!-- CARD END !-->
-
-				
-
-			</div>
-		</div>
-
-
-	
-</div>
-	
-</div>
-</div>
-</body>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/8e28c47455.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="app.css">
+   </head>
+   <body>
+      <div>
+         <div class="container mb-3">
+            <div class="ml-auto mr-auto query">
+               <div class="row">
+                  <div class="offset-sm-2 col-sm-8 offset-lg-3 col-lg-5 text-white homeScreen">
+                     <p class="iris">IRIS</p>
+                     <p class="hello">Hello  &nbsp;&nbsp;👋🏻</p>
+                     <div class="virtual pb-5">
+                        <p>I am Iris, a Virtual Assistant<br>How may I help you?</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="offset-sm-2 col-sm-8 offset-lg-3 col-lg-5 formDiv">
+                     <!-- CARD START !-->
+                     <div class="card cardTop">
+                        <div class="card-body">
+                           <div class="cardBodyDiv">
+                              <i class="fas fa-robot text-white robot"></i>
+                           </div>
+                           <p class="fAsked">Frequently Asked Questions</p>
+                           <div class="questionDiv1">
+                              <div class="questionDiv2">
+                                 <i class="fas fa-question"></i>
+                              </div>
+                           </div>
+                           <!--form div!-->
+                           <div class="formDiv1">
+                              <div class="ml-2 formDiv2">
+                                 <div class="formDiv3">
+                                 </div>
+                              </div>
+                              <span>
+                                 <div class="formDiv4">  Can I redeem my FB before the original term?</div>
+                              </span>
+                           </div>
+                           <div class="formDiv1 mt-2">
+                              <div class="ml-2 formDiv2">
+                                 <div class="formDiv3">
+                                 </div>
+                              </div>
+                              <span>
+                                 <div class="formDiv4">  How do I pay my Credit card bill?</div>
+                              </span>
+                           </div>
+                           <div class="formDiv1 mt-2">
+                              <div class="ml-2 formDiv2">
+                                 <div class="formDiv3">
+                                 </div>
+                              </div>
+                              <span>
+                                 <div class="formDiv4">  How can I get my Account Statement?</div>
+                              </span>
+                           </div>
+                           <div class="formDiv1 mt-2">
+                              <div class="ml-2 formDiv2">
+                                 <div class="formDiv3">
+                                 </div>
+                              </div>
+                              <span>
+                                 <div class="formDiv4">  What is the tencure of Fixed Deposit?</div>
+                              </span>
+                           </div>
+                           <!--form div end!-->
+                           <!-- button !-->
+                           <div class="mt-4 text-center">
+                              <button class="btn btn-lg">
+                              <i class="far fa-comment-alt"></i> Start a New Conversation
+                              </button>
+                           </div>
+                           <!--button end !-->
+                        </div>
+                     </div>
+                     <!-- CARD END !-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
